@@ -17,7 +17,6 @@ import (
 var (
 	configPath string
 	outputDir  string
-	verbose    bool
 )
 
 // Default config file names to search for (in order of preference)

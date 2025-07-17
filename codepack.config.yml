@@ -1,4 +1,0 @@
-project_name: "Test Project"
-project_path: "."
-exclude_patterns:
-  - "LICENSE"
