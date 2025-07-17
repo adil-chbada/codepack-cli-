@@ -1,7 +1,7 @@
 # Makefile for extract-cli
 
 # Variables
-BINARY_NAME=codepack
+BINARY_NAME=codepack-cli
 MAIN_PATH=./main.go
 BUILD_DIR=build
 

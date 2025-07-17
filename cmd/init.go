@@ -32,12 +32,12 @@ Available templates:
 - react: React projects with build/, node_modules/ exclusions
 - nodejs: Node.js projects with standard npm exclusions
 - python: Python projects with __pycache__/, .pyc exclusions`,
-	Example: `  codepack init common
-codepack init go
-codepack init go -o my-go-config.yaml
-codepack init flutter -o my-flutter-config.yaml
-codepack init react --output my-react-config.yaml
-codepack init --list`,
+	Example: `  codepack-cli init common
+codepack-cli init go
+codepack-cli init go -o my-go-config.yaml
+codepack-cli init flutter -o my-flutter-config.yaml
+codepack-cli init react --output my-react-config.yaml
+codepack-cli init --list`,
 	Args: func(cmd *cobra.Command, args []string) error {
 		if listTemplates {
 			return nil
@@ -96,7 +96,7 @@ func runInit(cmd *cobra.Command, args []string) error {
 	logSuccess(fmt.Sprintf("Config file created: %s", outputFile))
 	fmt.Printf("Template: %s\n", infoColor(templateName))
 	fmt.Printf("You can now edit the config and run: %s\n",
-		infoColor(fmt.Sprintf("codepack generate -c %s", outputFile)))
+		infoColor(fmt.Sprintf("codepack-cli generate -c %s", outputFile)))
 
 	return nil
 }

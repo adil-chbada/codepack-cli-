@@ -42,10 +42,10 @@ If no config file is specified, the tool will automatically search for default
 config files in the following order: extract.config.yml, extract.config.yaml,
 extract-config.yaml, extract-config.yml, .extract-config.yaml, .extract-config.yml,
 extract.yaml, extract.yml`,
-	Example: `  codepack generate
-  codepack generate -c config.yaml
-  codepack generate -c flutter-config.yaml -o ./output
-  codepack generate --config myproject.yaml --output-dir ./docs`,
+	Example: `  codepack-cli generate
+  codepack-cli generate -c config.yaml
+  codepack-cli generate -c flutter-config.yaml -o ./output
+  codepack-cli generate --config myproject.yaml --output-dir ./docs`,
 	RunE: runGenerate,
 }
 

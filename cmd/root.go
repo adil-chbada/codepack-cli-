@@ -20,7 +20,7 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "codepack",
+	Use:   "codepack-cli",
 	Short: "A CLI tool to extract and categorize project files into markdown",
 	Long: `Extract CLI is a powerful tool that scans your project directory,
 categorizes files based on configurable patterns, and generates organized

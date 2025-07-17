@@ -18,26 +18,26 @@ A powerful Go-based CLI tool designed to help developers share their code with A
 
 ### From Source
 ```bash
-git clone https://github.com/adil-chbada/codepack.git
-cd codepack
+git clone https://github.com/adil-chbada/codepack-cli.git
+cd codepack-cli-cli
 make build
 ```
 
 ### Using Go Install
 ```bash
-go install github.com/adil-chbada/codepack@latest
+go install github.com/adil-chbada/codepack-cli@latest
 ```
 
 ## 🚀 Quick Start
 
 1. **Create a configuration file**:
    ```bash
-   codepack init react -o my-config.yaml
+   codepack-cli init react -o my-config.yaml
    ```
 
 2. **Generate AI-ready documentation**:
    ```bash
-   codepack generate -c my-config.yaml
+   codepack-cli generate -c my-config.yaml
    ```
 
 3. **Share with AI** - Copy the content from generated markdown files and paste directly into ChatGPT, Claude, or any AI assistant for code review, debugging, or development assistance:
@@ -51,23 +51,23 @@ go install github.com/adil-chbada/codepack@latest
 
 #### `init` - Generate Configuration Template
 ```bash
-codepack init [template] [flags]
+codepack-cli init [template] [flags]
 
 # Examples
-codepack init react -o react-config.yaml
-codepack init flutter -o flutter-config.yaml
-codepack init common -o common-exclusions.yaml  # Universal exclusions only
-codepack init --list  # Show available templates
+codepack-cli init react -o react-config.yaml
+codepack-cli init flutter -o flutter-config.yaml
+codepack-cli init common -o common-exclusions.yaml  # Universal exclusions only
+codepack-cli init --list  # Show available templates
 ```
 
 #### `generate` - Create Documentation
 ```bash
-codepack generate [flags]
+codepack-cli generate [flags]
 
 # Examples
-codepack generate                           # Uses default config file
-codepack generate -c config.yaml           # Specify config file
-codepack generate -o ./docs                # Custom output directory
+codepack-cli generate                           # Uses default config file
+codepack-cli generate -c config.yaml           # Specify config file
+codepack-cli generate -o ./docs                # Custom output directory
 ```
 
 ### Available Templates
@@ -155,8 +155,8 @@ Each file includes metadata and well-formatted content optimized for AI consumpt
 
 ### Setup
 ```bash
-git clone https://github.com/adil-chbada/codepack.git
-cd codepack
+git clone https://github.com/adil-chbada/codepack-cli.git
+cd codepack-cli
 make deps
 make build
 ```
@@ -204,8 +204,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 💬 Support
 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/adil-chbada/codepack/issues)
-- 💡 **Features**: [Feature Requests](https://github.com/adil-chbada/codepack/issues)
-- 📖 **Docs**: [GitHub Wiki](https://github.com/adil-chbada/codepack/wiki)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/adil-chbada/codepack-cli/issues)
+- 💡 **Features**: [Feature Requests](https://github.com/adil-chbada/codepack-cli/issues)
+- 📖 **Docs**: [GitHub Wiki](https://github.com/adil-chbada/codepack-cli/wiki)
 
 ---

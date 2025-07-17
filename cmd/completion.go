@@ -12,13 +12,13 @@ var completionCmd = &cobra.Command{
 	Long: `To load completions:
 
 Bash:
-  $ source <(codepack completion bash)
+  $ source <(codepack-cli completion bash)
 
   # To load completions for each session, execute once:
   # Linux:
-  $ codepack completion bash > /etc/bash_completion.d/codepack
+  $ codepack-cli completion bash > /etc/bash_completion.d/codepack-cli
   # macOS:
-  $ codepack completion bash > /usr/local/etc/bash_completion.d/codepack
+  $ codepack-cli completion bash > /usr/local/etc/bash_completion.d/codepack-cli
 
 Zsh:
   # If shell completion is not already enabled in your environment,
@@ -26,21 +26,21 @@ Zsh:
   $ echo "autoload -U compinit; compinit" >> ~/.zshrc
 
   # To load completions for each session, execute once:
-  $ codepack completion zsh > "${fpath[1]}/_codepack"
+  $ codepack-cli completion zsh > "${fpath[1]}/_codepack-cli"
 
   # You will need to start a new shell for this setup to take effect.
 
 Fish:
-  $ codepack completion fish | source
+  $ codepack-cli completion fish | source
 
   # To load completions for each session, execute once:
-  $ codepack completion fish > ~/.config/fish/completions/codepack.fish
+  $ codepack-cli completion fish > ~/.config/fish/completions/codepack-cli.fish
 
 PowerShell:
-  PS> codepack completion powershell | Out-String | Invoke-Expression
+  PS> codepack-cli completion powershell | Out-String | Invoke-Expression
 
   # To load completions for every new session, run:
-  PS> codepack completion powershell > codepack.ps1
+  PS> codepack-cli completion powershell > codepack-cli.ps1
   # and source this file from your PowerShell profile.
 `,
 	DisableFlagsInUseLine: true,
