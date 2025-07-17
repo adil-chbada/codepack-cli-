@@ -88,6 +88,7 @@ exclude_patterns:
   - "*.swo"
   - "tmp/**"
   - "temp/**"
+  - "*.codepack.*"
   - ".env.local"
   - ".env.development.local"
   - ".env.test.local"

@@ -1,6 +1,6 @@
-# CodePack CLI 🚀
+# 🚀 CodePack CLI
 
-A powerful Go-based CLI tool designed to help developers share their code with AI assistants efficiently. It intelligently scans your project directory, categorizes files based on configurable patterns, and generates organized markdown files that can be easily shared as a single consolidated document with AI tools like ChatGPT, Claude, or GitHub Copilot.
+CodePack CLI is a powerful command-line tool designed to help developers share their code with AI assistants like Claude, GPT-4, and other LLMs. It intelligently extracts and categorizes your project files into organized markdown files that can be easily shared with any AI assistant.
 
 ## ✨ Key Features
 
@@ -123,9 +123,9 @@ exclude_patterns:
 use_regex: false
 ```
 
-## 📊 Output Files with Size Information
+## 🗂️ Output Files with Size Information
 
-Extract CLI generates three AI-optimized markdown files that can be easily shared with AI assistants:
+CodePack CLI generates three AI-optimized markdown files that can be easily shared with AI assistants:
 
 ### `project-code.md`
 - **Content**: Source code files and main application files formatted for AI code review, debugging, and development assistance

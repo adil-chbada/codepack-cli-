@@ -78,6 +78,9 @@ func getCommonExclusions() []string {
 		"coverage/**",
 		"*.coverage",
 		"lcov.info",
+		// CodePack configuration files
+		"*.codepack.yaml",
+		"*.codepack.yml",
 	}
 }
 

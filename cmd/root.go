@@ -22,13 +22,14 @@ var (
 var rootCmd = &cobra.Command{
 	Use:   "codepack-cli",
 	Short: "A CLI tool to extract and categorize project files into markdown",
-	Long: `Extract CLI is a powerful tool that scans your project directory,
-categorizes files based on configurable patterns, and generates organized
-markdown files for code, data, and local files.
-
-It supports multiple project templates (Flutter, Laravel, Vue, React) and
-respects .gitignore patterns for intelligent file filtering.`,
-	Version: version,
+	Long: `CodePack CLI is a powerful tool that scans your project directory,
+automatically categorizing files into code, data, and configuration files.
+It then generates well-structured markdown files that are easy to share
+with AI assistants like Claude, GPT-4, and other LLMs.`,
+	Example: `  codepack-cli init flutter -o flutter-config.yaml
+  codepack-cli generate -c flutter-config.yaml
+  codepack-cli generate --verbose`,
+	Version: "1.2.0",
 }
 
 func Execute() error {

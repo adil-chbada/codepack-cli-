@@ -14,7 +14,7 @@ import (
 var templatesFS embed.FS
 
 var (
-	outputFile string
+	outputFile    string
 	listTemplates bool
 )
 
@@ -51,7 +51,7 @@ codepack-cli init --list`,
 }
 
 func init() {
-	initCmd.Flags().StringVarP(&outputFile, "output", "o", "", "output file path (defaults to extract.config.yml)")
+	initCmd.Flags().StringVarP(&outputFile, "output", "o", "", "output file path (defaults to config.codepack.yaml)")
 	initCmd.Flags().BoolVarP(&listTemplates, "list", "l", false, "list available templates")
 }
 
@@ -62,7 +62,7 @@ func runInit(cmd *cobra.Command, args []string) error {
 
 	// Use default filename if not specified
 	if outputFile == "" {
-		outputFile = "extract.config.yml"
+		outputFile = "config.codepack.yaml"
 	}
 
 	templateName := args[0]

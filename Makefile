@@ -1,4 +1,4 @@
-# Makefile for extract-cli
+# Makefile for codepack-cli
 
 # Variables
 BINARY_NAME=codepack-cli

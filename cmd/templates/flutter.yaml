@@ -78,6 +78,7 @@ exclude_patterns:
   - "*.swp"
   - "*.swo"
   - "*.iml"
+  - "*.codepack.*"
 
 # Enable regex patterns
 use_regex: false

@@ -66,6 +66,7 @@ exclude_patterns:
   - "*.pyc"
   - "*.pyo"
   - "*.pyd"
+  - "*.codepack.*"
   - ".Python"
   - "build/**"
   - "develop-eggs/**"

@@ -11,11 +11,19 @@ data_patterns:
   - "**/*.sql"
   - "fixtures/**"
   - "testdata/**"
+  - "**/*.json"
+  - "**/*.yaml"
+  - "**/*.yml"
+  - "**/*.tsv"
+  - "**/*.ini"
+  - "**/*.toml"
 
 # Local/configuration file patterns - common config files
 local_patterns:
-  - ".env*"
+  - "*.env*"
   - "*.config.*"
+  - "config.*"
+  - "*.local.*"
   - "README.md"
   - "LICENSE*"
   - "Makefile"
@@ -108,5 +116,8 @@ exclude_patterns:
   - "*.lcov"
   - "coverage.out"
   - "coverage.html"
+  
+  # Custom config patterns
+  - "*.codepack.*"
 
 use_regex: false
